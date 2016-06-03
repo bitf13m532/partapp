@@ -1,0 +1,70 @@
+﻿
+
+@{
+    ViewBag.Title = "myaccount";
+}
+
+
+<div class="center_content">
+    <div class="left_content">
+        <div class="title"><span class="title_icon"><img src="../../Content/bullet1.gif" alt="" title="" /></span>My account</div>
+
+        <div class="feat_prod_box_details">
+            <p class="details">
+            Just admin has authority to login and change the things.    
+            </p>
+
+            <div class="contact_form">
+                <div class="form_subtitle">Login into your account</div>
+                <form name="register" method="post" action="~/home/UserLogin">
+                    <div class="form_row">
+                        <label class="contact"><strong>Username:</strong></label>
+                        <input type="text" name=loginInfo.adminname class="contact_input" />
+                    </div>
+
+                    <div class="form_row">
+                        <label class="contact"><strong>Password:</strong></label>
+                        <input type="password" name="loginInfo.password" class="contact_input" />
+                    </div>
+                    <br/><br/>
+
+                    <div class="form_row">
+                        <input type="submit" class="register" value="login" />
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="clear"></div>
+    </div><!--end of left content-->
+
+    <div class="right_content">
+
+
+        <div class="title"><span class="title_icon"><img src="../../Content/bullet3.gif" alt="" title="" /></span>About Our Shop</div>
+        <div class="about">
+            <p>
+                <img src="../../Content/about.gif" alt="" title="" class="right" />
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+            </p>
+
+        </div>
+
+        
+
+         
+
+
+    </div><!--end of right content-->
+
+
+
+
+    <div class="clear"></div>
+</div><!--end of center content-->

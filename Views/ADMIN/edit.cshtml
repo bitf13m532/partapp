@@ -1,0 +1,131 @@
+﻿@{
+    Layout = null;
+}
+
+
+@model projectAuto.Models.item
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>edit</title>
+</head>
+<body>
+    <div>
+        
+
+      
+
+
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+            @Scripts.Render("~../../Content/css")
+            @Scripts.Render("~../../bundles/modernizr")
+            <title>Auto Parts</title>
+            <link rel="stylesheet" type="text/css" href="~/content/style.css" />
+        </head>
+
+        <div id="wrap">
+            <div class="header">
+                <div class="logo"><a href="../../home/index"><img src="../../Content//logo.gif" alt="" title="" border="0" /></a></div>
+                <div id="menu">
+                </div>
+
+
+            </div>
+
+            <div id="container" style="width:20%; height:700px; background-color:gray ; float:left">
+
+                </br></br>
+
+                <form method="post" action="~/ADMIN/adhome">
+                    <input type="submit" value="Hmoe" style="margin-left: 30px; background-color: black; color: white" />
+                </form>
+                <br />
+                <form method="post" action="~/ADMIN/adminadd">
+                    <input type="submit" value="Add Item" style="margin-left: 30px; background-color: black; color: white" />
+                </form>
+                <br />
+                <form method="post" action="~/ADMIN/adminview">
+                    <input type="submit" value="View Item" style=" margin-left:30px; background-color: black; color: white" />
+                </form>
+
+                <br />
+
+                <form method="post" action="~/ADMIN/admindel">
+                    <input type="submit" value="Delete Item" style="margin-left: 30px; background-color: black; color: white" />
+                </form>
+                <br />
+
+                <form method="post" action="~/ADMIN/adminupdate">
+                    <input type="submit" value="Update Item" style="margin-left: 30px; background-color: black; color: white" />
+                </form>
+
+                <br />
+
+                <form method="post" action="~/billing/name">
+                    <input type="submit" value="Generate Bill " style="margin-left: 30px; background-color: black; color: white" />
+                </form>
+
+                <br />
+                <form method="post" action="~/ADMIN/register">
+                    <input type="submit" value="change password" style="margin-left: 30px; background-color: black; color: white" />
+                </form>
+                <br /><br /><br /><br />
+
+            </div>
+            <div id="content" style="width: 80%; height: 700px; background-image: url('../../Images/25.jpg'); float: left; ">
+                <div style="margin-left: 200px">
+                    </br>
+                   
+                    <br/> <br/>
+                    <form action="/ADMIN/EditOK/@Model.I_Id" method="post">
+
+                        Item Name :
+                        <input type="text" name="name" value="@Model.iname" style="margin-left:20px"  />
+                        <br /></br>
+
+                        Image :
+                        <input type="file" name="image" value="@Model.image" style="margin-left:45px"  />
+                        <br /></br>
+
+                        Color of item :
+                        <input type="text" name="color" value="@Model.icolor" style="margin-left:10px"  />
+                        <br /></br>
+                        Company Nmae:
+                        <select name="comp_Id" value="@Model.comp_Id" >
+                            <option>select company</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select></br></br>
+
+                        Item price:
+                        <input type="text" name="iprice" value="@Model.iprice" style="margin-left:28px"  />
+                        <br /></br>
+                        Quantity:
+                        <input type="text" name="quantity" value="@Model.quantity" style="margin-left:35px"  />
+                        <br /></br>
+                        warranty:
+                        <input type="text" name="warranty" value="@Model.warranty" style="margin-left:35px "/ >
+                        <br /></br>
+
+                        <input type="submit" value="Edit" style="margin-left:400px;background-color:blue;color:white" /></br></br>
+                    </form>
+                    </div>
+</div>
+                    <div class="footer">
+                        <div class="left_footer"><img src="../../Content/footer_logo.gif" alt="" title="" /><br /> <a href="http://csscreme.com/freecsstemplates/" title="free templates"><img src="images/csscreme.gif" alt="free templates" title="free templates" border="0" /></a></div>
+                        <div class="right_footer">
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "receipt";
+}
+
+<center >
+    </br>
+    <h1>Purchased items / Receipt </h1>
+
+    <table>
+
+        <tr>
+
+            <td> Name of Item</td>
+            <td>price</td>
+            <td>Date</td>
+
+        </tr>
+
+        @foreach (var s in Model)
+        {
+            <tr>
+                <td>@s.name</td>
+                <td>@s.price</td>
+                <td>@s.date</td>
+
+
+            </tr>
+        }
+    </table>
+</center>
+

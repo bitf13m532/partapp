@@ -1,0 +1,163 @@
+﻿@{
+    ViewBag.Title = "category";
+}
+
+
+<div class="center_content">
+    <div class="left_content">
+        <div class="crumb_nav">
+            <a href="index.html">home</a> &gt;&gt; category name
+        </div>
+        <div class="title"><span class="title_icon"><img src="../../Content/bullet1.gif" alt="" title="" /></span>Category jewels</div>
+
+        <div class="new_products">
+
+            @*<div class="new_prod_box">
+                <a href="details.html">product name</a>
+                <div class="new_prod_bg">
+                    <a href="details.html"><img src="../../Content/thumb1.gif" alt="" title="" class="thumb" border="0" /></a>
+                </div>
+            </div>
+
+            <div class="new_prod_box">
+                <a href="details.html">product name</a>
+                <div class="new_prod_bg">
+                    <span class="new_icon"><img src="../../Content/new_icon.gif" alt="" title="" /></span>
+                    <a href="details.html"><img src="../../Content/thumb2.gif" alt="" title="" class="thumb" border="0" /></a>
+                </div>
+            </div>
+
+            <div class="new_prod_box">
+                <a href="details.html">product name</a>
+                <div class="new_prod_bg">
+                    <span class="new_icon"><img src="../../Content/promo_icon.gif" alt="" title="" /></span>
+                    <a href="details.html"><img src="../../Content/thumb3.gif" alt="" title="" class="thumb" border="0" /></a>
+                </div>
+            </div>
+
+            <div class="new_prod_box">
+                <a href="details.html">product name</a>
+                <div class="new_prod_bg">
+                    <a href="details.html"><img src="../../Content/thumb1.gif" alt="" title="" class="thumb" border="0" /></a>
+                </div>
+            </div>
+
+            <div class="new_prod_box">
+                <a href="details.html">product name</a>
+                <div class="new_prod_bg">
+                    <span class="new_icon"><img src="../../Content/promo_icon.gif" alt="" title="" /></span>
+                    <a href="details.html"><img src="../../Content/thumb2.gif" alt="" title="" class="thumb" border="0" /></a>
+                </div>
+            </div>
+
+            <div class="new_prod_box">
+                <a href="details.html">product name</a>
+                <div class="new_prod_bg">
+
+                    <a href="details.html"><img src="../../Content/thumb3.gif" alt="" title="" class="thumb" border="0" /></a>
+                </div>
+            </div>
+
+            <div class="new_prod_box">
+                <a href="details.html">product name</a>
+                <div class="new_prod_bg">
+                    <span class="new_icon"><img src="../../Content/new_icon.gif" alt="" title="" /></span>
+                    <a href="details.html"><img src="../../Content/thumb2.gif" alt="" title="" class="thumb" border="0" /></a>
+                </div>
+            </div>
+            <div class="new_prod_box">
+                <a href="details.html">product name</a>
+                <div class="new_prod_bg">
+                    <a href="details.html"><img src="../../Content/thumb1.gif" alt="" title="" class="thumb" border="0" /></a>
+                </div>
+            </div>
+
+            <div class="new_prod_box">
+                <a href="details.html">product name</a>
+                <div class="new_prod_bg">
+                    <a href="details.html"><img src="../../Content/thumb1.gif" alt="" title="" class="thumb" border="0" /></a>
+                </div>
+            </div>
+            <div class="new_prod_box">
+                <a href="details.html">product name</a>
+                <div class="new_prod_bg">
+                    <span class="new_icon"><img src="../../Content/new_icon.gif" alt="" title="" /></span>
+                    <a href="details.html"><img src="../../Content/thumb1.gif" alt="" title="" class="thumb" border="0" /></a>
+                </div>
+            </div>
+            <div class="new_prod_box">
+                <a href="details.html">product name</a>
+                <div class="new_prod_bg">
+                    <a href="details.html"><img src="../../Content/thumb1.gif" alt="" title="" class="thumb" border="0" /></a>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <span class="disabled"><<</span><span class="current">1</span><a href="#?page=2">2</a><a href="#?page=3">3</a>…<a href="#?page=199">10</a><a href="#?page=200">11</a><a href="#?page=2">>></a>
+            </div>*@
+
+
+            <center >
+                </br>
+                <h1>List of Items</h1>
+                
+                <table>
+
+                    <tr style="color:red">
+                        <td>ID</td>
+                        <td> Name</td>
+                        <td>Image</td>
+                        <td>Color</td>
+                        <td>Company</td>
+                        <td>price</td>
+                        <td>Quantity</td>
+                        <td>Warranty</td>
+                    </tr>
+
+                    @foreach (var s in Model)
+                    {
+                        <tr>
+                            <td>@s.I_Id</td>
+                            <td>@s.iname</td>
+                            <td><img src="@s.image" alt="Image can not be diplayed"></td>
+
+                            <td>@s.icolor</td>
+                            <td>@s.comp_Id</td>
+                            <td>@s.iprice</td>
+                            <td>@s.quantity</td>
+                            <td>@s.warranty</td>
+
+                        </tr>
+                    }
+                </table>
+            </center>
+
+        </div>
+
+
+        <div class="clear"></div>
+    </div><!--end of left content-->
+
+    @*<div class="right_content">
+
+
+
+
+        <div class="title"><span class="title_icon"><img src="../../Content/bullet3.gif" alt="" title="" /></span>About Our Shop</div>
+        <div class="about">
+            <p>
+                <img src="../../Content/about.gif" alt="" title="" class="right" />
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+            </p>
+
+        </div>*@
+
+        
+
+    </div><!--end of right content-->
+
+
+
+
+    <div class="clear"></div>
+</div><!--end of center content-->
